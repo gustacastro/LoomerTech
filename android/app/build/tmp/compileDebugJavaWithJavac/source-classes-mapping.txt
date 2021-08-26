@@ -1,0 +1,14 @@
+com/loomertech/BuildConfig.java
+ com.loomertech.BuildConfig
+com/loomertech/MainActivity.java
+ com.loomertech.MainActivity
+com/loomertech/ReactNativeFlipper.java
+ com.loomertech.ReactNativeFlipper
+ com.loomertech.ReactNativeFlipper$1
+ com.loomertech.ReactNativeFlipper$2
+ com.loomertech.ReactNativeFlipper$2$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/loomertech/MainApplication.java
+ com.loomertech.MainApplication
+ com.loomertech.MainApplication$1
