@@ -144,6 +144,7 @@ export function Main() {
             <Input
                 placeholder="Procurar organizações..."
                 value={newInput}
+                onSubmitEditing={searchApi(newInput)}
                 onChangeText={setNewInput}
                 autoCapitalize='none'
                 icon={newInput}
@@ -153,7 +154,7 @@ export function Main() {
         { newInput ? (
             <>
                 <List 
-                    data={searchApi(newInput)}
+                    data={tmp}
                     keyExtractor={item => item.id}
                     ListEmptyComponent={EmptyList}
                     renderItem={({ item }) => {
