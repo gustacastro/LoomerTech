@@ -108,7 +108,7 @@ export function Main() {
     const EmptyList = () => (
         <>
             <IconSad name="frown" size={25} color="#666666"/>
-            <TitleOops>Oops! Não encontramos organizações com este nome. </TitleOops>
+            <TitleOops>Oops! Não encontramos organizações com este nome.</TitleOops>
         </>
       );
 
