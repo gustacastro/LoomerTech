@@ -38,7 +38,7 @@ export function Main() {
 
     const [orgs, setOrgs] = useState([]);
     const [newInput, setNewInput] = useState('');
-    const [tmp, setTmp] = useState('');
+    const [tmp, setTmp] = useState([]);
     const [saved, setSaved] = useState([]);
     const navigation = useNavigation();
 
@@ -112,12 +112,14 @@ export function Main() {
         </>
       );
 
-      const searchApi = (org) => {
-        api.get(`/users/${org}`).then((response) => {
-            setTmp(response.data);
-            }).catch((error) => {
-            console.log(error);
-        });
+       const searchApi = (org) => {
+        // api.get(`/users/${org}`).then((response) => {
+        //     setTmp(response.data);
+        //     console.log(response.data);
+        //     console.log(tmp);
+        //     }).catch((error) => {
+        //     console.log(error);
+        // });
         
       };
 
@@ -157,6 +159,9 @@ export function Main() {
                     data={tmp}
                     keyExtractor={item => item.id}
                     ListEmptyComponent={EmptyList}
+                    // initialNumToRender={1}
+                    // maxToRenderPerBatch={1}
+                    // onEndReachedThreshold={0.5}
                     renderItem={({ item }) => {
                         const { name,avatar_url, bio } = item;
 
